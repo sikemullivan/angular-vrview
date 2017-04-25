@@ -14,24 +14,51 @@ lib-cov
 # Coverage directory used by tools like istanbul
 coverage
 
-# nyc test coverage
-.nyc_output
-
 # Grunt intermediate storage (http://gruntjs.com/creating-plugins#storing-task-files)
 .grunt
-
-# node-waf configuration
-.lock-wscript
 
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
-node_modules
-jspm_packages
+# Users Environment Variables
+.lock-wscript
 
-# Optional npm cache directory
-.npm
+# OS generated files #
+.DS_Store
+ehthumbs.db
+Icon?
+Thumbs.db
 
-# Optional REPL history
-.node_repl_history
+# Node Files #
+/node_modules
+/bower_components
+
+# Coverage #
+/coverage/
+
+# Typing #
+/src/typings/tsd/
+/typings/
+/tsd_typings/
+
+# Dist #
+/dist
+/public/__build__/
+/src/*/__build__/
+__build__/**
+.webpack.json
+
+# Doc #
+/doc/
+
+# IDE #
+.idea/
+*.swp
+
+# Generated #
+*.js
+!karma.conf.js
+!karma-test-shim.js
+*.map
+*.d.ts
+typings

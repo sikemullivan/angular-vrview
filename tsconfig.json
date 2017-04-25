@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "declaration": true,
+        "moduleResolution": "node"
+    },
+    "files" : [
+        "./typings/index.d.ts",
+        "./angular-vrview.ts",
+        "./src/service.ts",
+        "./test/service.spec.ts"
+    ]
+}

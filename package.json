@@ -1,0 +1,62 @@
+{
+  "name": "angular-vrview",
+  "version": "1.0.0",
+  "description": "Library for Google VR View with Angular 4 and above",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sikemullivan/angular-vrview"
+  },
+  "main":"angular-vrview.js",
+  "typings": "./angular-vrview.d.ts",
+  "scripts": {
+    "prebuild": "npm run clean",
+    "test":"tsc && karma start",
+    "prepublish": "typings install && npm test"
+  },
+  "peerDependencies": {
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0"
+  },
+  "devDependencies": {
+    "@angular/cli": "1.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@types/node": "~6.0.60",
+    "tslint": "^4.0.0",
+    "codelyzer": "~2.0.0",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "jasmine-core": "~2.5.2",
+    "karma": "~1.4.1", 
+    "karma-jasmine": "~1.1.0",
+    "karma-phantomjs-launcher": "^1.0.0",
+    "karma-typescript-preprocessor": "^0.0.21",
+    "karma-cli": "~1.0.1",
+    "karma-coverage-istanbul-reporter": "^0.2.0",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "typescript": "^2.2.2",
+    "typings": "^2.1.1",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.10",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  },
+  "keywords": [
+    "angular",
+    "angular2",
+    "vr",
+    "view",
+    "ng2",
+    "360"
+  ],
+  "author": "Michael Sullivan <sikemullivan@gmail.com>",
+  "license": "MIT"
+}
