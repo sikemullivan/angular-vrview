@@ -8,8 +8,7 @@
         "inlineSourceMap": true,
         "inlineSources": true,
         "declaration": true,
-        "moduleResolution": "node",
-        "lib": ["es2015", "dom"]
+        "moduleResolution": "node"
     },
     "files": [
         "./typings/index.d.ts",
@@ -18,7 +17,6 @@
         "./test/service.spec.ts"
     ],
     "exclude": [
-        "typings/index.d.ts",
         "node_modules/*",
         "coverage/*"
     ],
