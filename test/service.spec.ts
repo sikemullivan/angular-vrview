@@ -1,8 +1,8 @@
-import { SampleService } from "../src/service";
-import { TestBed, async, inject } from '@angular/core/testing'
+import { SampleService } from '../src/service';
+import { TestBed, inject } from '@angular/core/testing';
 
 export function main() {
-    describe("Sample service", () => {
+    describe('Sample service', () => {
 
         TestBed.configureTestingModule({
             providers: [SampleService]
@@ -10,7 +10,7 @@ export function main() {
         it('should work', inject([SampleService], (service: SampleService) => {
             expect(SampleService).toBeDefined();
             expect(service).toBeDefined();
-            expect(service.title).toEqual("Sample service");
+            expect(service.title).toEqual('Sample service');
         }));
     });
 }

@@ -95,4 +95,3 @@ Promise
     .then(
         __karma__.start, __karma__.error
     );
-

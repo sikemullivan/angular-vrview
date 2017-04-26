@@ -10,12 +10,6 @@
         "declaration": true,
         "moduleResolution": "node"
     },
-    "files": [
-        "./typings/index.d.ts",
-        "./angular-vrview.ts",
-        "./src/service.ts",
-        "./test/service.spec.ts"
-    ],
     "exclude": [
         "node_modules/*",
         "coverage/*"
