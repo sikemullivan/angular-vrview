@@ -21,7 +21,7 @@ module.exports = function(config) {
 
             // System.js for module loading
             'node_modules/systemjs/dist/system.src.js',
-            'node_modules/systemjs/dist/system-polyfills.js',
+            //'node_modules/systemjs/dist/system-polyfills.js',
 
             // Zone.js dependencies
             'node_modules/zone.js/dist/zone.js',
@@ -79,7 +79,6 @@ module.exports = function(config) {
             'karma-chrome-launcher',
             'karma-spec-reporter'
         ],
-
         // Coverage reporter generates the coverage
         reporters: [/*'spec', 'progress',*/ 'dots', 'coverage'],
 
