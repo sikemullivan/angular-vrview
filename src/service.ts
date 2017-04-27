@@ -6,5 +6,6 @@ export class SampleService {
 
     constructor() {
         console.log('hello from sample service');
+        console.log('hello from sample service 2');
     }
 }
