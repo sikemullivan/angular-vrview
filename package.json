@@ -9,6 +9,7 @@
   "main": "angular-vrview.js",
   "typings": "./angular-vrview.d.ts",
   "scripts": {
+    "prebuild": "npm run clean",
     "build": "ngc",
     "postbuild": "npm test",
     "build:travis": "ngc",
@@ -78,5 +79,13 @@
     "360"
   ],
   "author": "Michael Sullivan <sikemullivan@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    },
+    "ghooks": {
+      "pre-commit": "npm run test"
+    }
+  }
 }
