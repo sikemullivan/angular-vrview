@@ -17,7 +17,7 @@ git init
 git config user.name "Michael Sullivan"
 git config user.email "sikemullivan@gmail.com"
 
-git remote add upstream "https://$GH_TOKEN@github.com/angular-vrview.git"
+git remote add upstream "https://$GH_TOKEN@github.com/sikemullivan/angular-vrview.git"
 git fetch upstream
 git reset upstream/gh-pages
 
