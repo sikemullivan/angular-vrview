@@ -11,8 +11,6 @@ fi
 
 rev=$(git rev-parse --short HEAD)
 
-cd docs/_book
-
 git init
 git config user.name "Michael Sullivan"
 git config user.email "sikemullivan@gmail.com"
