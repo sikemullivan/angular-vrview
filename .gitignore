@@ -11,6 +11,7 @@ npm-debug.log
 coverage
 compiled
 docs/_book
+!typings/**/*.d.ts
 !karma.conf.js
 !karma-test-shim.js
 
