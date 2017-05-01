@@ -14,6 +14,7 @@ module.exports = function(config) {
         frameworks: ['jasmine'],
 
         files: [
+
             // Polyfills.
             'node_modules/core-js/client/shim.min.js',
 
@@ -31,6 +32,7 @@ module.exports = function(config) {
             'node_modules/zone.js/dist/jasmine-patch.js',
             'node_modules/zone.js/dist/async-test.js',
             'node_modules/zone.js/dist/fake-async-test.js',
+
 
             // RxJs.
             { pattern: 'node_modules/rxjs/**/*.js', included: false, watched: false },
