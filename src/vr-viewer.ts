@@ -21,15 +21,19 @@ export class VrViewer implements AfterContentInit {
     elem: HTMLElement;
     private _v : any;
 
+    video = null; 
+
     constructor(ref: ElementRef) {
         this.elem = ref.nativeElement;
     }
 
     ngAfterContentInit() {
-        this._v = new VRView.Player('#' + this.elem.id, {
-            video: 'link/to/video.mp4',
-            is_stereo: true
-        }); 
+        if(this.video != null){
+            this._v = new VRView.Player('#' + this.elem.id, {
+                video: this.video,
+                is_stereo: true
+            }); 
+        }
     }
 
 }
