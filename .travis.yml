@@ -3,7 +3,9 @@ language: node_js
 deploy:
   email: sikemullivan@gmail.com
   provider: npm
-  api_key: 38d7fe3b-dbe8-4c2d-be33-d1b2ac6b5bcd
+  api_key:
+    - secure: >-
+        OcZOK7C+XTvB8R2+9t6ASmfORkC3/UoQ7XhFJB5Cv8R9FI+PuaYS694+EB10aJgXwfrzxYoztE6+qHFngZQSKjWDw5+lVy6ufvDe9LQhMiXs4OInGjxwjQaMJmEhQI95gUGkJSr9UMnAheOHAstaPqIEMQja6DMrSuWeLctAE0iSRV5kXnUHiMwTQqsbKfs4Co9mhNKTfiPNVlOyIHaWSyuv1ImLrrVnV2Bz4YI+5JGxpHWKzMERFPb0rG8CknwxLMouJhTi/Zmmr2iwCLnXgjZ1AknD7zLhJlDIurv0N0w+uQKKPoOMtDYNO6V3vq9XE8U8M7FyX3TWYmhV9kRDbtOFLWDgXBsEzrjzKhMrqaBVUqYWgde9D+tOZb8OM4nrpqJxEC3ehwkme2Bh1hG5BcBxFoidHIPhaWaATdrdVSI+lRsBwM1RhDOtJ4qMeP/LqLWZFkSII3XKwiPRMYg5UrnmtAPS6lV1nfdqkjUpgTRqlxb5CpttyQSr2xHbmRraxK1A2MKFnj1WFeTSicrqTM/OPsePp1U7yVt4EBOmEojlPjSbHSFFqQ7eJKhsZPjrpjSRu7FrqcuQk0rP/9DssAsSBS7/a8uKG2wwwsRpfr6qtEOZVtIYdnCltNyTxy3V/Eif2pGMcBHJ8c/NPndfslxOQE0B+9wWtfRk3Ni9c08=
 cache:
   directories:
     - node_modules
@@ -13,14 +15,14 @@ node_js:
   - '7.7'
 before_install:
   - export CHROME_BIN=chromium-browser
-  - export DISPLAY=:99.0
+  - 'export DISPLAY=:99.0'
   - sh -e /etc/init.d/xvfb start
   - npm i -g npm@^4.3.0
   - npm i -g typings
 before_script:
   - npm prune
 script:
-  - npm run build:travis
+  - 'npm run build:travis'
 after_success:
   - npm run semantic-release
 branches:
