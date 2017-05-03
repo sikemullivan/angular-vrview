@@ -23,9 +23,11 @@ export class VrViewer implements AfterContentInit {
 
     video : string = null; 
     isSterio : boolean = true;
+    blah : string;
 
     constructor(ref: ElementRef) {
         this.elem = ref.nativeElement;
+        this.blah = "blah";
     }
 
     ngAfterContentInit() {
