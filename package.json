@@ -1,6 +1,6 @@
 {
   "name": "angular-vrview",
-  "version": "1.0.1",
+  "version": "1.0.0-semantically-released",
   "description": "Library for Google VR View with Angular 4 and above",
   "repository": {
     "type": "git",

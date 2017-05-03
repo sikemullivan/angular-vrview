@@ -18,7 +18,7 @@ before_script:
 script:
   - npm run build:travis
 after_success:
-  - npm publish
+  - npm run semantic-release
 branches:
   only:
     - master
