@@ -21,7 +21,8 @@ export class VrViewer implements AfterContentInit {
     elem: HTMLElement;
     private _v : any;
 
-    video = null; 
+    video : string = null; 
+    isSterio : boolean = true;
 
     constructor(ref: ElementRef) {
         this.elem = ref.nativeElement;
@@ -31,7 +32,7 @@ export class VrViewer implements AfterContentInit {
         if(this.video != null){
             this._v = new VRView.Player('#' + this.elem.id, {
                 video: this.video,
-                is_stereo: true
+                is_stereo: this.isSterio
             }); 
         }
     }
